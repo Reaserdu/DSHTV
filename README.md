@@ -5,13 +5,13 @@
 ## 订阅地址（仓库建好并推送后可用）
 
 ```
-https://raw.githubusercontent.com/<你的用户名>/<仓库名>/main/config.json
+https://raw.githubusercontent.com/Reaserdu/DSHTV/main/config.json
 ```
 
 国内加速：
 
 ```
-https://cdn.jsdelivr.net/gh/<你的用户名>/<仓库名>@main/config.json
+https://cdn.jsdelivr.net/gh/Reaserdu/DSHTV@main/config.json
 ```
 
 ## 配置文件
