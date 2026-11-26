@@ -1,5 +1,5 @@
 {
-  "spider": "http://oss4liview.moji.com/thd_file/2026/11/26/51ee39d57065aba54aeb3b13ec328da6.jpg;md5;b0f6090aaf39b01168acc99e73950e4c",
+  "spider": "http://oss4liview.moji.com/thd_file/2026/11/24/0684202079fbec343ec03f772b72e928.jpg;md5;d773eab0709f62b0077f8112765eb6d2",
   "parses": [
     {
       "name": "王",
@@ -950,151 +950,10 @@
         "9.9.9.9",
         "149.112.112.112"
       ]
-    },
-    {
-      "name": "Google",
-      "url": "https://dns.google/dns-query",
-      "ips": [
-        "8.8.4.4",
-        "8.8.8.8"
-      ]
-    },
-    {
-      "name": "Cloudflare",
-      "url": "https://cloudflare-dns.com/dns-query",
-      "ips": [
-        "1.1.1.1",
-        "1.0.0.1",
-        "2606:4700:4700::1111",
-        "2606:4700:4700::1001"
-      ]
-    },
-    {
-      "name": "AdGuard",
-      "url": "https://dns.adguard.com/dns-query",
-      "ips": [
-        "94.140.14.140",
-        "94.140.14.141"
-      ]
-    },
-    {
-      "name": "DNSWatch",
-      "url": "https://resolver2.dns.watch/dns-query",
-      "ips": [
-        "84.200.69.80",
-        "84.200.70.40"
-      ]
-    },
-    {
-      "name": "Quad9",
-      "url": "https://dns.quad9.net/dns-quer",
-      "ips": [
-        "9.9.9.9",
-        "149.112.112.112"
-      ]
     }
   ],
   "flags": [],
   "rules": [
-    {
-      "name": "proxy",
-      "hosts": [
-        "hlsztemgsplive.miguvideo.com=hlsztemgsplive.188766.xyz",
-        "cache.ott.fifalive.itv.cmvideo.cn=fifalive.188766.xyz",
-        "iptv.huuc.edu.cn=huucv6.188766.xyz",
-        "raw.githubusercontent.com",
-        "googlevideo.com",
-        "cdn.v82u1l.com",
-        "cdn.iz8qkg.com",
-        "cdn.kin6c1.com",
-        "c.biggggg.com",
-        "c.olddddd.com",
-        "haiwaikan.com",
-        "www.histar.tv",
-        "youtube.com",
-        "uhibo.com",
-        ".*boku.*",
-        ".*nivod.*",
-        ".*ulivetv.*"
-      ]
-    },
-    {
-      "name": "海外看",
-      "hosts": [
-        "haiwaikan"
-      ],
-      "regex": [
-        "10.0099",
-        "10.3333",
-        "16.0599",
-        "8.1748",
-        "12.33",
-        "10.85"
-      ]
-    },
-    {
-      "name": "火山嗅探",
-      "hosts": [
-        "huoshan.com"
-      ],
-      "regex": [
-        "item_id="
-      ]
-    },
-    {
-      "name": "抖音嗅探",
-      "hosts": [
-        "douyin.com"
-      ],
-      "regex": [
-        "is_play_url="
-      ]
-    },
-    {
-      "name": "農民嗅探",
-      "hosts": [
-        "toutiaovod.com"
-      ],
-      "regex": [
-        "video/tos/cn"
-      ]
-    },
-    {
-      "name": "新视觉嗅探",
-      "hosts": [
-        "muzhi-video.bj.bcebos.com"
-      ],
-      "regex": [
-        "202403/"
-      ]
-    },
-    {
-      "name": "七新嗅探",
-      "hosts": [
-        "api.52wyb.com"
-      ],
-      "regex": [
-        "m3u8?pt=m3u8"
-      ]
-    },
-    {
-      "name": "夜市點擊",
-      "hosts": [
-        "yeslivetv.com"
-      ],
-      "script": [
-        "document.getElementsByClassName('vjs-big-play-button')[0].click()"
-      ]
-    },
-    {
-      "name": "毛驢點擊",
-      "hosts": [
-        "www.maolvys.com"
-      ],
-      "script": [
-        "document.getElementsByClassName('swal-button swal-button--confirm')[0].click()"
-      ]
-    },
     {
       "name": "proxy",
       "hosts": [
@@ -3155,8 +3014,8 @@
       "jar": "http://118.89.172.248:8025/jar/tan.php"
     },
     {
-      "key": "360",
-      "name": "[177KB/s|2042ms|中] 360",
+      "key": "360资源",
+      "name": "[235KB/s|1812ms|中] 360资源",
       "type": 1,
       "api": "https://360zy.com/api.php/provide/vod",
       "searchable": 1,
@@ -3165,7 +3024,7 @@
     },
     {
       "key": "🦚360┃采集",
-      "name": "[171KB/s|1849ms|中] 🦚360┃采集",
+      "name": "[226KB/s|2495ms|中] 🦚360┃采集",
       "type": 1,
       "api": "https://360zy.com/api.php/provide/vod?",
       "searchable": 1,
@@ -3173,8 +3032,8 @@
       "filterable": 0
     },
     {
-      "key": "360┃直连",
-      "name": "[167KB/s|2005ms|中] 360┃直连",
+      "key": "360┃资源",
+      "name": "[217KB/s|1811ms|中] 360┃资源",
       "type": 1,
       "api": "https://360zy.com/api.php/provide/vod/",
       "searchable": 1,
@@ -3182,26 +3041,8 @@
       "filterable": 0
     },
     {
-      "key": "360资源",
-      "name": "[157KB/s|2244ms|中] 360资源",
-      "type": 1,
-      "api": "https://360zy.com/api.php/provide/vod/?ac=list",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 0
-    },
-    {
-      "key": "奶香 | 采集",
-      "name": "[4640KB/s|497ms|稳] 奶香 | 采集",
-      "type": 1,
-      "api": "https://naixxzy.com/api.php/provide/vod/",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 0
-    },
-    {
       "key": "鸡坤 | 采集",
-      "name": "[2849KB/s|580ms|稳] 鸡坤 | 采集",
+      "name": "[2451KB/s|847ms|稳] 鸡坤 | 采集",
       "type": 1,
       "api": "https://jkunzyapi.com/api.php/provide/vod/",
       "searchable": 1,
@@ -3209,17 +3050,35 @@
       "filterable": 0
     },
     {
-      "key": "大奶子 | 采集",
-      "name": "[2508KB/s|569ms|稳] 大奶子 | 采集",
+      "key": "金鹰资源",
+      "name": "[2448KB/s|2232ms|稳] 金鹰资源",
       "type": 1,
-      "api": "https://apidanaizi.com/api.php/provide/vod",
+      "api": "https://jyzyapi.com/provide/vod/",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0
+    },
+    {
+      "key": "奶香 | 采集",
+      "name": "[2359KB/s|829ms|稳] 奶香 | 采集",
+      "type": 1,
+      "api": "https://naixxzy.com/api.php/provide/vod/",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0
+    },
+    {
+      "key": "金鹰影视",
+      "name": "[2272KB/s|2205ms|稳] 金鹰影视",
+      "type": 0,
+      "api": "https://jyzyapi.com/provide/vod/from/jinyingm3u8/at/xml/",
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 0
     },
     {
       "key": "魔都资源",
-      "name": "[2260KB/s|780ms|稳] 魔都资源",
+      "name": "[2139KB/s|1027ms|稳] 魔都资源",
       "type": 1,
       "api": "https://www.mdzyapi.com/api.php/provide/vod/?ac=list",
       "searchable": 1,
@@ -3227,221 +3086,13 @@
       "filterable": 0
     },
     {
-      "key": "如意资源网",
-      "name": "[2244KB/s|1028ms|稳] 如意资源网",
-      "type": 0,
-      "api": "https://cj.rycjapi.com/api.php/provide/vod/at/xml/",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 0
-    },
-    {
-      "key": "🌼如意┃影视🌼",
-      "name": "[2111KB/s|1192ms|稳] 🌼如意┃影视🌼",
+      "key": "👖裤佬丨采集",
+      "name": "[2067KB/s|890ms|稳] 👖裤佬丨采集",
       "type": 1,
-      "api": "http://cj.rycjapi.com/api.php/provide/vod",
+      "api": "https://api.wsyzy.net/api.php/provide/vod",
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 0
-    },
-    {
-      "key": "配置中心",
-      "name": "网盘配置中心 | 扫码登录",
-      "type": 3,
-      "api": "csp_Config",
-      "searchable": 0,
-      "filterable": 0,
-      "changeable": 0,
-      "jar": "https://s1.tuoguanyun.cn/autoupload/f/eix3x/20261125/sKIH/0X0/easy11.25.png;md5;5d7b1c487f5ccbd178c8dede627ee85a"
-    },
-    {
-      "key": "阿里云盘",
-      "name": "阿里 | 云盘",
-      "type": 3,
-      "api": "csp_PanAli",
-      "searchable": 0,
-      "filterable": 0,
-      "changeable": 0,
-      "style": {
-        "type": "list",
-        "ratio": 1.433
-      },
-      "_auth": "设置->网盘->阿里云盘：扫码授权或粘贴 refresh_token（32位）；高级用法可把 token 写入本地 token.txt 并在 ext.tokenFile 指定路径",
-      "jar": "https://s1.tuoguanyun.cn/autoupload/f/eix3x/20261125/sKIH/0X0/easy11.25.png;md5;5d7b1c487f5ccbd178c8dede627ee85a"
-    },
-    {
-      "key": "夸克网盘",
-      "name": "夸父 | 网盘",
-      "type": 3,
-      "api": "csp_PanQuark",
-      "searchable": 0,
-      "filterable": 0,
-      "changeable": 0,
-      "style": {
-        "type": "list",
-        "ratio": 1.433
-      },
-      "_auth": "设置->网盘->夸克网盘：扫码登录或粘贴 Cookie（含 __pus 或 quark token），也可在 ext.cookie 直接写入",
-      "jar": "https://s1.tuoguanyun.cn/autoupload/f/eix3x/20261125/sKIH/0X0/easy11.25.png;md5;5d7b1c487f5ccbd178c8dede627ee85a"
-    },
-    {
-      "key": "UC网盘",
-      "name": "UC | 网盘",
-      "type": 3,
-      "api": "csp_PanUC",
-      "searchable": 0,
-      "filterable": 0,
-      "changeable": 0,
-      "style": {
-        "type": "list",
-        "ratio": 1.433
-      },
-      "_auth": "设置->网盘->UC网盘：扫码或粘贴 Cookie；与夸克同源，token 可共用",
-      "jar": "https://s1.tuoguanyun.cn/autoupload/f/eix3x/20261125/sKIH/0X0/easy11.25.png;md5;5d7b1c487f5ccbd178c8dede627ee85a"
-    },
-    {
-      "key": "115网盘",
-      "name": "壹壹伍 | 云盘",
-      "type": 3,
-      "api": "csp_Pan115",
-      "searchable": 0,
-      "filterable": 0,
-      "changeable": 0,
-      "style": {
-        "type": "list",
-        "ratio": 1.433
-      },
-      "ext": {
-        "cookieFile": "token/115_cookie.txt"
-      },
-      "_auth": "115 需在浏览器登录 115 网页版后 F12 抓取完整 Cookie（含 UID/SEID/cid），写入 token/115_cookie.txt 或 ext.cookie。部分壳子因开发者接入限制扫码不可用",
-      "jar": "https://s1.tuoguanyun.cn/autoupload/f/eix3x/20261125/sKIH/0X0/easy11.25.png;md5;5d7b1c487f5ccbd178c8dede627ee85a"
-    },
-    {
-      "key": "百度网盘",
-      "name": "千度 | 云盘",
-      "type": 3,
-      "api": "csp_PanBaidu",
-      "searchable": 0,
-      "filterable": 0,
-      "changeable": 0,
-      "style": {
-        "type": "list",
-        "ratio": 1.433
-      },
-      "_auth": "设置->网盘->百度网盘：粘贴 BDUSS（浏览器 Cookie 中）或扫码；BDUSS 可在 pan.baidu.com 登录后 F12->Application->Cookies 获取",
-      "jar": "https://s1.tuoguanyun.cn/autoupload/f/eix3x/20261125/sKIH/0X0/easy11.25.png;md5;5d7b1c487f5ccbd178c8dede627ee85a"
-    },
-    {
-      "key": "天翼云盘",
-      "name": "天翅 | 云盘",
-      "type": 3,
-      "api": "csp_PanTianyi",
-      "searchable": 0,
-      "filterable": 0,
-      "changeable": 0,
-      "style": {
-        "type": "list",
-        "ratio": 1.433
-      },
-      "_auth": "设置->网盘->天翼云盘(189)：扫码或粘贴 Cookie（含 COOKIE 中的 session）；ext 可传 token 文件路径",
-      "jar": "https://s1.tuoguanyun.cn/autoupload/f/eix3x/20261125/sKIH/0X0/easy11.25.png;md5;5d7b1c487f5ccbd178c8dede627ee85a"
-    },
-    {
-      "key": "迅雷云盘",
-      "name": "疾雷 | 云盘",
-      "type": 3,
-      "api": "csp_PanXunlei",
-      "searchable": 0,
-      "filterable": 0,
-      "changeable": 0,
-      "style": {
-        "type": "list",
-        "ratio": 1.433
-      },
-      "_auth": "设置->网盘->迅雷云盘：扫码或粘贴 Cookie；也可填 X-Session-Id/token",
-      "jar": "https://s1.tuoguanyun.cn/autoupload/f/eix3x/20261125/sKIH/0X0/easy11.25.png;md5;5d7b1c487f5ccbd178c8dede627ee85a"
-    },
-    {
-      "key": "PikPak网盘",
-      "name": "皮卡 | 云盘",
-      "type": 3,
-      "api": "csp_PanPikPak",
-      "searchable": 0,
-      "filterable": 0,
-      "changeable": 0,
-      "style": {
-        "type": "list",
-        "ratio": 1.433
-      },
-      "ext": {
-        "user": "",
-        "password": ""
-      },
-      "_auth": "PikPak 用账号密码登录：在 ext.user / ext.password 填入 PikPak 账号密码（首次登录换取 token），或在设置->网盘扫码；境外服务需代理",
-      "jar": "https://s1.tuoguanyun.cn/autoupload/f/eix3x/20261125/sKIH/0X0/easy11.25.png;md5;5d7b1c487f5ccbd178c8dede627ee85a"
-    },
-    {
-      "key": "123云盘",
-      "name": "壹贰叁 | 云盘",
-      "type": 3,
-      "api": "csp_Pan123",
-      "searchable": 0,
-      "filterable": 0,
-      "changeable": 0,
-      "style": {
-        "type": "list",
-        "ratio": 1.433
-      },
-      "_auth": "123 网盘：登录 123pan.com 后 F12 抓请求头 Authorization（形如 Bearer xxx），填入设置->网盘或 ext.token",
-      "jar": "https://s1.tuoguanyun.cn/autoupload/f/eix3x/20261125/sKIH/0X0/easy11.25.png;md5;5d7b1c487f5ccbd178c8dede627ee85a"
-    },
-    {
-      "key": "移动云盘",
-      "name": "迁徙 | 云盘",
-      "type": 3,
-      "api": "csp_PanYidong",
-      "searchable": 0,
-      "filterable": 0,
-      "changeable": 0,
-      "style": {
-        "type": "list",
-        "ratio": 1.433
-      },
-      "_auth": "移动云盘(139/和彩云)：扫码或粘贴 Cookie；若内置脚本名为 csp_Yidong4K 可替换 api 字段。ext 支持 cookieFile",
-      "jar": "https://s1.tuoguanyun.cn/autoupload/f/eix3x/20261125/sKIH/0X0/easy11.25.png;md5;5d7b1c487f5ccbd178c8dede627ee85a"
-    },
-    {
-      "key": "光鸭网盘",
-      "name": "光羽 | 云盘",
-      "type": 3,
-      "api": "csp_PanGuangya",
-      "searchable": 0,
-      "filterable": 0,
-      "changeable": 0,
-      "style": {
-        "type": "list",
-        "ratio": 1.433
-      },
-      "_auth": "光鸭网盘：按提示扫码/粘贴 Cookie（作为补充网盘）",
-      "jar": "https://s1.tuoguanyun.cn/autoupload/f/eix3x/20261125/sKIH/0X0/easy11.25.png;md5;5d7b1c487f5ccbd178c8dede627ee85a"
-    },
-    {
-      "key": "种子磁力",
-      "name": "籽粒 | 磁力",
-      "type": 3,
-      "api": "csp_SeedHub",
-      "searchable": 1,
-      "quickSearch": 0,
-      "ext": {
-        "site": [
-          "https://seedog.cc",
-          "https://seeduck.cc",
-          "https://hubdog.cc"
-        ]
-      },
-      "timeout": 60,
-      "_auth": "磁力搜索无需登录，配合下方解析器播放"
     }
   ],
   "lives": [
@@ -3595,5 +3246,5 @@
       "type": 0
     }
   ],
-  "_pan_note": "网盘站点已绑定 EasyTV 网盘 JAR；扫码入口在『网盘配置中心』站点"
+  "_pan_note": "网盘由客户端内置 Pan spider 提供；在软件『配置中心』扫码登录，并开启 GO 代理后即可播放网盘线路"
 }
