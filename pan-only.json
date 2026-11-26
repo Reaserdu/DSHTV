@@ -1,5 +1,5 @@
 {
-  "spider": "http://oss4liview.moji.com/thd_file/2026/11/26/51ee39d57065aba54aeb3b13ec328da6.jpg;md5;b0f6090aaf39b01168acc99e73950e4c",
+  "spider": "https://s1.tuoguanyun.cn/autoupload/f/eix3x/20261125/sKIH/0X0/easy11.25.png;md5;5d7b1c487f5ccbd178c8dede627ee85a",
   "parses": [
     {
       "name": "王",
@@ -1198,6 +1198,16 @@
   "hosts": [],
   "sites": [
     {
+      "key": "配置中心",
+      "name": "网盘配置中心 | 扫码登录",
+      "type": 3,
+      "api": "csp_Config",
+      "searchable": 0,
+      "filterable": 0,
+      "changeable": 0,
+      "jar": "https://s1.tuoguanyun.cn/autoupload/f/eix3x/20261125/sKIH/0X0/easy11.25.png;md5;5d7b1c487f5ccbd178c8dede627ee85a"
+    },
+    {
       "key": "阿里云盘",
       "name": "阿里 | 云盘",
       "type": 3,
@@ -1209,7 +1219,8 @@
         "type": "list",
         "ratio": 1.433
       },
-      "_auth": "设置->网盘->阿里云盘：扫码授权或粘贴 refresh_token（32位）；高级用法可把 token 写入本地 token.txt 并在 ext.tokenFile 指定路径"
+      "_auth": "设置->网盘->阿里云盘：扫码授权或粘贴 refresh_token（32位）；高级用法可把 token 写入本地 token.txt 并在 ext.tokenFile 指定路径",
+      "jar": "https://s1.tuoguanyun.cn/autoupload/f/eix3x/20261125/sKIH/0X0/easy11.25.png;md5;5d7b1c487f5ccbd178c8dede627ee85a"
     },
     {
       "key": "夸克网盘",
@@ -1223,7 +1234,8 @@
         "type": "list",
         "ratio": 1.433
       },
-      "_auth": "设置->网盘->夸克网盘：扫码登录或粘贴 Cookie（含 __pus 或 quark token），也可在 ext.cookie 直接写入"
+      "_auth": "设置->网盘->夸克网盘：扫码登录或粘贴 Cookie（含 __pus 或 quark token），也可在 ext.cookie 直接写入",
+      "jar": "https://s1.tuoguanyun.cn/autoupload/f/eix3x/20261125/sKIH/0X0/easy11.25.png;md5;5d7b1c487f5ccbd178c8dede627ee85a"
     },
     {
       "key": "UC网盘",
@@ -1237,7 +1249,8 @@
         "type": "list",
         "ratio": 1.433
       },
-      "_auth": "设置->网盘->UC网盘：扫码或粘贴 Cookie；与夸克同源，token 可共用"
+      "_auth": "设置->网盘->UC网盘：扫码或粘贴 Cookie；与夸克同源，token 可共用",
+      "jar": "https://s1.tuoguanyun.cn/autoupload/f/eix3x/20261125/sKIH/0X0/easy11.25.png;md5;5d7b1c487f5ccbd178c8dede627ee85a"
     },
     {
       "key": "115网盘",
@@ -1254,7 +1267,8 @@
       "ext": {
         "cookieFile": "token/115_cookie.txt"
       },
-      "_auth": "115 需在浏览器登录 115 网页版后 F12 抓取完整 Cookie（含 UID/SEID/cid），写入 token/115_cookie.txt 或 ext.cookie。部分壳子因开发者接入限制扫码不可用"
+      "_auth": "115 需在浏览器登录 115 网页版后 F12 抓取完整 Cookie（含 UID/SEID/cid），写入 token/115_cookie.txt 或 ext.cookie。部分壳子因开发者接入限制扫码不可用",
+      "jar": "https://s1.tuoguanyun.cn/autoupload/f/eix3x/20261125/sKIH/0X0/easy11.25.png;md5;5d7b1c487f5ccbd178c8dede627ee85a"
     },
     {
       "key": "百度网盘",
@@ -1268,7 +1282,8 @@
         "type": "list",
         "ratio": 1.433
       },
-      "_auth": "设置->网盘->百度网盘：粘贴 BDUSS（浏览器 Cookie 中）或扫码；BDUSS 可在 pan.baidu.com 登录后 F12->Application->Cookies 获取"
+      "_auth": "设置->网盘->百度网盘：粘贴 BDUSS（浏览器 Cookie 中）或扫码；BDUSS 可在 pan.baidu.com 登录后 F12->Application->Cookies 获取",
+      "jar": "https://s1.tuoguanyun.cn/autoupload/f/eix3x/20261125/sKIH/0X0/easy11.25.png;md5;5d7b1c487f5ccbd178c8dede627ee85a"
     },
     {
       "key": "天翼云盘",
@@ -1282,7 +1297,8 @@
         "type": "list",
         "ratio": 1.433
       },
-      "_auth": "设置->网盘->天翼云盘(189)：扫码或粘贴 Cookie（含 COOKIE 中的 session）；ext 可传 token 文件路径"
+      "_auth": "设置->网盘->天翼云盘(189)：扫码或粘贴 Cookie（含 COOKIE 中的 session）；ext 可传 token 文件路径",
+      "jar": "https://s1.tuoguanyun.cn/autoupload/f/eix3x/20261125/sKIH/0X0/easy11.25.png;md5;5d7b1c487f5ccbd178c8dede627ee85a"
     },
     {
       "key": "迅雷云盘",
@@ -1296,7 +1312,8 @@
         "type": "list",
         "ratio": 1.433
       },
-      "_auth": "设置->网盘->迅雷云盘：扫码或粘贴 Cookie；也可填 X-Session-Id/token"
+      "_auth": "设置->网盘->迅雷云盘：扫码或粘贴 Cookie；也可填 X-Session-Id/token",
+      "jar": "https://s1.tuoguanyun.cn/autoupload/f/eix3x/20261125/sKIH/0X0/easy11.25.png;md5;5d7b1c487f5ccbd178c8dede627ee85a"
     },
     {
       "key": "PikPak网盘",
@@ -1314,7 +1331,8 @@
         "user": "",
         "password": ""
       },
-      "_auth": "PikPak 用账号密码登录：在 ext.user / ext.password 填入 PikPak 账号密码（首次登录换取 token），或在设置->网盘扫码；境外服务需代理"
+      "_auth": "PikPak 用账号密码登录：在 ext.user / ext.password 填入 PikPak 账号密码（首次登录换取 token），或在设置->网盘扫码；境外服务需代理",
+      "jar": "https://s1.tuoguanyun.cn/autoupload/f/eix3x/20261125/sKIH/0X0/easy11.25.png;md5;5d7b1c487f5ccbd178c8dede627ee85a"
     },
     {
       "key": "123云盘",
@@ -1328,7 +1346,8 @@
         "type": "list",
         "ratio": 1.433
       },
-      "_auth": "123 网盘：登录 123pan.com 后 F12 抓请求头 Authorization（形如 Bearer xxx），填入设置->网盘或 ext.token"
+      "_auth": "123 网盘：登录 123pan.com 后 F12 抓请求头 Authorization（形如 Bearer xxx），填入设置->网盘或 ext.token",
+      "jar": "https://s1.tuoguanyun.cn/autoupload/f/eix3x/20261125/sKIH/0X0/easy11.25.png;md5;5d7b1c487f5ccbd178c8dede627ee85a"
     },
     {
       "key": "移动云盘",
@@ -1342,7 +1361,8 @@
         "type": "list",
         "ratio": 1.433
       },
-      "_auth": "移动云盘(139/和彩云)：扫码或粘贴 Cookie；若内置脚本名为 csp_Yidong4K 可替换 api 字段。ext 支持 cookieFile"
+      "_auth": "移动云盘(139/和彩云)：扫码或粘贴 Cookie；若内置脚本名为 csp_Yidong4K 可替换 api 字段。ext 支持 cookieFile",
+      "jar": "https://s1.tuoguanyun.cn/autoupload/f/eix3x/20261125/sKIH/0X0/easy11.25.png;md5;5d7b1c487f5ccbd178c8dede627ee85a"
     },
     {
       "key": "光鸭网盘",
@@ -1356,7 +1376,8 @@
         "type": "list",
         "ratio": 1.433
       },
-      "_auth": "光鸭网盘：按提示扫码/粘贴 Cookie（作为补充网盘）"
+      "_auth": "光鸭网盘：按提示扫码/粘贴 Cookie（作为补充网盘）",
+      "jar": "https://s1.tuoguanyun.cn/autoupload/f/eix3x/20261125/sKIH/0X0/easy11.25.png;md5;5d7b1c487f5ccbd178c8dede627ee85a"
     },
     {
       "key": "种子磁力",
