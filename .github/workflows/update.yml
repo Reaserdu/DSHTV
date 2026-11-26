@@ -1,0 +1,30 @@
+name: 更新订阅配置
+
+on:
+  schedule:
+    - cron: '0 18 * * *'   # 每天 02:00 北京时间 (UTC+8)
+  workflow_dispatch:
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: 合并上游源
+        run: python scripts/merge.py
+      - name: 提交变更
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add config.json movie-only.json pan-only.json data/sources_snapshot.json
+          if ! git diff --cached --quiet; then
+            git commit -m "chore: 自动更新订阅 $(date -u +%Y-%m-%dT%H:%M)"
+            git push
+          else
+            echo "无变更"
+          fi
