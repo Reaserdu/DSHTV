@@ -100,12 +100,29 @@ def main():
     parses = dedup(parses, "name")
     lives = dedup(lives, "name")
 
-    # 网盘站点
+    # 网盘站点（绑定 EasyTV 网盘 JAR + 配置中心，触发扫码授权面板）
+    PAN_JAR = "https://s1.tuoguanyun.cn/autoupload/f/eix3x/20261125/sKIH/0X0/easy11.25.png;md5;5d7b1c487f5ccbd178c8dede627ee85a"
+    PAN_APIS = {"csp_PanAli","csp_PanQuark","csp_PanUC","csp_Pan115","csp_PanBaidu",
+                "csp_PanTianyi","csp_PanXunlei","csp_PanPikPak","csp_Pan123",
+                "csp_PanYidong","csp_PanGuangya"}
+    CENTER = {"key":"配置中心","name":"网盘配置中心 | 扫码登录","type":3,"api":"csp_Config",
+              "searchable":0,"filterable":0,"changeable":0,"jar":PAN_JAR}
+
+    def fix_pan(s):
+        if s.get("api") in PAN_APIS or "网盘" in str(s.get("key","")) or "云盘" in str(s.get("name","")):
+            s["jar"] = PAN_JAR
+        return s
+
     pan_sites = []
     if PAN_LOCAL.exists():
         pan = json.loads(PAN_LOCAL.read_text(encoding="utf-8"))
-        pan_sites = [s for s in pan.get("sites", [])]
+        pan_sites = [fix_pan(s) for s in pan.get("sites", [])]
         parses = dedup(parses + pan.get("parses", []), "name")
+    # 确保配置中心存在（网盘扫码入口）
+    if not any(x.get("api") in ("csp_Config","csp_PanConfig") for x in pan_sites + movie_sites):
+        pan_sites.insert(0, dict(CENTER))
+    # 主 spider 也需含网盘类：pan-only 单独用 EasyTV spider
+    pan_spider = PAN_JAR
 
     common = {
         "spider": spider or "",
@@ -124,9 +141,21 @@ def main():
         (ROOT / name).write_text(json.dumps(obj, ensure_ascii=False, indent=2), encoding="utf-8")
         print(f"生成 {name}: sites={len(sites)}")
 
-    dump("movie-only.json", movie_sites, {"lives": lives})
-    dump("pan-only.json", pan_sites)
-    dump("config.json", dedup(movie_sites + pan_sites), {"lives": lives})
+    # pan-only 用 EasyTV spider（含网盘类），保证扫码可用
+    pan_common = dict(common); pan_common["spider"] = pan_spider
+    (ROOT / "pan-only.json").write_text(
+        json.dumps({**pan_common, "sites": pan_sites}, ensure_ascii=False, indent=2), encoding="utf-8")
+    print(f"生成 pan-only.json: sites={len(pan_sites)} spider=EasyTV")
+
+    (ROOT / "movie-only.json").write_text(
+        json.dumps({**common, "sites": movie_sites, "lives": lives}, ensure_ascii=False, indent=2), encoding="utf-8")
+    print(f"生成 movie-only.json: sites={len(movie_sites)}")
+
+    all_sites = dedup(movie_sites + pan_sites)
+    (ROOT / "config.json").write_text(
+        json.dumps({**common, "sites": all_sites, "lives": lives,
+                    "_pan_note":"网盘站点已绑定 EasyTV 网盘 JAR；扫码入口在『网盘配置中心』站点"}, ensure_ascii=False, indent=2), encoding="utf-8")
+    print(f"生成 config.json: sites={len(all_sites)}")
 
 
 if __name__ == "__main__":
