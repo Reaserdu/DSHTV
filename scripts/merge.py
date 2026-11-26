@@ -100,29 +100,20 @@ def main():
     parses = dedup(parses, "name")
     lives = dedup(lives, "name")
 
-    # 网盘站点（绑定 EasyTV 网盘 JAR + 配置中心，触发扫码授权面板）
-    PAN_JAR = "https://s1.tuoguanyun.cn/autoupload/f/eix3x/20261125/sKIH/0X0/easy11.25.png;md5;5d7b1c487f5ccbd178c8dede627ee85a"
-    PAN_APIS = {"csp_PanAli","csp_PanQuark","csp_PanUC","csp_Pan115","csp_PanBaidu",
-                "csp_PanTianyi","csp_PanXunlei","csp_PanPikPak","csp_Pan123",
-                "csp_PanYidong","csp_PanGuangya"}
+    # 网盘处理（XiugouTV / FongMi / CatVod 内核）
+    # XiugouTV 用内置 Pan spider + PanConfig 配置中心；不认 csp_PanAli/csp_PanQuark
+    # 等独立网盘类，加进去只会 Fallback to SpiderNull。网盘授权在软件内
+    # "配置中心"扫码，需要开启 GO 代理才能播放网盘线路。
     CENTER = {"key":"配置中心","name":"网盘配置中心 | 扫码登录","type":3,"api":"csp_Config",
-              "searchable":0,"filterable":0,"changeable":0,"jar":PAN_JAR}
+              "searchable":0,"filterable":0,"changeable":0}
 
-    def fix_pan(s):
-        if s.get("api") in PAN_APIS or "网盘" in str(s.get("key","")) or "云盘" in str(s.get("name","")):
-            s["jar"] = PAN_JAR
-        return s
-
+    # 只保留配置中心类站点，不引入无效网盘站点（网盘能力由客户端内置 Pan 提供）
     pan_sites = []
+    if not any(x.get("api") in ("csp_Config","csp_PanConfig","csp_PanConfigGuard") for x in movie_sites):
+        pan_sites.append(dict(CENTER))
     if PAN_LOCAL.exists():
         pan = json.loads(PAN_LOCAL.read_text(encoding="utf-8"))
-        pan_sites = [fix_pan(s) for s in pan.get("sites", [])]
         parses = dedup(parses + pan.get("parses", []), "name")
-    # 确保配置中心存在（网盘扫码入口）
-    if not any(x.get("api") in ("csp_Config","csp_PanConfig") for x in pan_sites + movie_sites):
-        pan_sites.insert(0, dict(CENTER))
-    # 主 spider 也需含网盘类：pan-only 单独用 EasyTV spider
-    pan_spider = PAN_JAR
 
     common = {
         "spider": spider or "",
@@ -141,21 +132,19 @@ def main():
         (ROOT / name).write_text(json.dumps(obj, ensure_ascii=False, indent=2), encoding="utf-8")
         print(f"生成 {name}: sites={len(sites)}")
 
-    # pan-only 用 EasyTV spider（含网盘类），保证扫码可用
-    pan_common = dict(common); pan_common["spider"] = pan_spider
-    (ROOT / "pan-only.json").write_text(
-        json.dumps({**pan_common, "sites": pan_sites}, ensure_ascii=False, indent=2), encoding="utf-8")
-    print(f"生成 pan-only.json: sites={len(pan_sites)} spider=EasyTV")
-
+    note = "网盘由客户端内置 Pan spider 提供；在软件『配置中心』扫码登录，并开启 GO 代理后即可播放网盘线路"
     (ROOT / "movie-only.json").write_text(
-        json.dumps({**common, "sites": movie_sites, "lives": lives}, ensure_ascii=False, indent=2), encoding="utf-8")
+        json.dumps({**common, "sites": movie_sites, "lives": lives, "_pan_note":note}, ensure_ascii=False, indent=2), encoding="utf-8")
     print(f"生成 movie-only.json: sites={len(movie_sites)}")
 
     all_sites = dedup(movie_sites + pan_sites)
     (ROOT / "config.json").write_text(
-        json.dumps({**common, "sites": all_sites, "lives": lives,
-                    "_pan_note":"网盘站点已绑定 EasyTV 网盘 JAR；扫码入口在『网盘配置中心』站点"}, ensure_ascii=False, indent=2), encoding="utf-8")
+        json.dumps({**common, "sites": all_sites, "lives": lives, "_pan_note":note}, ensure_ascii=False, indent=2), encoding="utf-8")
     print(f"生成 config.json: sites={len(all_sites)}")
+
+    (ROOT / "pan-only.json").write_text(
+        json.dumps({**common, "sites": pan_sites, "_pan_note":note}, ensure_ascii=False, indent=2), encoding="utf-8")
+    print(f"生成 pan-only.json: sites={len(pan_sites)} (仅配置中心)")
 
 
 if __name__ == "__main__":
