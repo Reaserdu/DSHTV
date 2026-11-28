@@ -1,5 +1,5 @@
 {
-  "spider": "http://oss4liview.moji.com/thd_file/2026/11/26/51ee39d57065aba54aeb3b13ec328da6.jpg;md5;b0f6090aaf39b01168acc99e73950e4c",
+  "spider": "http://oss4liview.moji.com/thd_file/2026/11/27/0213f017ffc1b0ffc289883771ca2c5a.jpg;md5;231915407140da7d4319728bf4266174",
   "parses": [
     {
       "name": "王",
@@ -2583,6 +2583,24 @@
       ]
     },
     {
+      "key": "tv_back-026_feifan",
+      "name": "🍀┃非凡┃资源·1号VIP源",
+      "type": 1,
+      "api": "http://ffzy5.tv/api.php/provide/vod",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "categories": [
+        "韩国剧",
+        "欧美剧",
+        "台湾剧",
+        "战争片",
+        "国产剧",
+        "大陆综艺"
+      ],
+      "hide": 1
+    },
+    {
       "key": "tv_back-023_csp_小胡",
       "name": "👒┃小胡┃资源┃·ok线路1",
       "type": 1,
@@ -2812,22 +2830,15 @@
       "filterable": 1
     },
     {
-      "key": "tv_back-012_feifan",
-      "name": "🍀┃非凡┃资源·二月红接口",
-      "type": 1,
-      "api": "http://ffzy5.tv/api.php/provide/vod",
+      "key": "tv_back-026_hjzhencai",
+      "name": "💖┃花卷┃4K💖·1号VIP源",
+      "type": 3,
+      "api": "csp_HjZhenCai",
       "searchable": 1,
       "quickSearch": 1,
-      "filterable": 1,
-      "categories": [
-        "韩国剧",
-        "欧美剧",
-        "台湾剧",
-        "战争片",
-        "国产剧",
-        "大陆综艺"
-      ],
-      "hide": 1
+      "filterable": 0,
+      "ext": "{\"site\":\"https://www.hjzhencai.top,https://www.huanjuanwp.shop,https://www.aihuajuan.top\"}",
+      "jar": "http://118.89.172.248:8025/jar/tan.php"
     },
     {
       "key": "tv_back-023_taopian",
@@ -3146,17 +3157,6 @@
       ]
     },
     {
-      "key": "tv_back-012_hjzhencai",
-      "name": "💖┃花卷┃4K💖·二月红接口",
-      "type": 3,
-      "api": "csp_HjZhenCai",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 0,
-      "ext": "{\"site\":\"https://www.hjzhencai.top,https://www.huanjuanwp.shop,https://www.aihuajuan.top\"}",
-      "jar": "http://118.89.172.248:8025/jar/tan.php"
-    },
-    {
       "key": "tv_pref-007_csp_DouDou",
       "name": "🔍聚玩盒子-本接口免费-🈲贩卖·小盒子",
       "type": 3,
@@ -3232,91 +3232,6 @@
       "jar": "http://home.jundie.top:81/jar/top98_1.jar"
     },
     {
-      "key": "tv_back-017_种子",
-      "name": "种子 • 4K·潇洒",
-      "type": 3,
-      "api": "csp_SeedHub",
-      "searchable": 1,
-      "quickSearch": 0,
-      "ext": {
-        "site": [
-          "https://seedog.cc",
-          "https://seeduck.cc",
-          "https://hubdog.cc"
-        ]
-      },
-      "timeout": 60,
-      "jar": "https://qist.wyfc.qzz.io/xiaosa/spider.jar"
-    },
-    {
-      "key": "tv_back-017_即刻",
-      "name": "即刻 • 4K·潇洒",
-      "type": 3,
-      "api": "csp_Jike",
-      "searchable": 1,
-      "quickSearch": 0,
-      "filterable": 0,
-      "style": {
-        "type": "list"
-      },
-      "timeout": 60,
-      "jar": "https://qist.wyfc.qzz.io/xiaosa/spider.jar"
-    },
-    {
-      "key": "tv_back-017_双星",
-      "name": "双星 • 4K·潇洒",
-      "type": 3,
-      "api": "csp_ShuangXing",
-      "searchable": 1,
-      "quickSearch": 0,
-      "filterable": 0,
-      "style": {
-        "type": "list"
-      },
-      "timeout": 60,
-      "jar": "https://qist.wyfc.qzz.io/xiaosa/spider.jar"
-    },
-    {
-      "key": "tv_pref-007_农民",
-      "name": "🥝农民·小盒子",
-      "type": 3,
-      "api": "csp_XBPQ",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1,
-      "ext": "http://xhztv.top/xhz/sub/农民影视.json",
-      "jar": "http://xhztv.top/xhz/Yoursmile.jar"
-    },
-    {
-      "key": "tv_back-026_feifan",
-      "name": "🍀┃非凡┃资源·1号VIP源",
-      "type": 1,
-      "api": "http://ffzy5.tv/api.php/provide/vod",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1,
-      "categories": [
-        "韩国剧",
-        "欧美剧",
-        "台湾剧",
-        "战争片",
-        "国产剧",
-        "大陆综艺"
-      ],
-      "hide": 1
-    },
-    {
-      "key": "tv_back-026_hjzhencai",
-      "name": "💖┃花卷┃4K💖·1号VIP源",
-      "type": 3,
-      "api": "csp_HjZhenCai",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 0,
-      "ext": "{\"site\":\"https://www.hjzhencai.top,https://www.huanjuanwp.shop,https://www.aihuajuan.top\"}",
-      "jar": "http://118.89.172.248:8025/jar/tan.php"
-    },
-    {
       "key": "tv_back-026_JianSou",
       "name": "💖┃简搜┃4K💖·1号VIP源",
       "type": 3,
@@ -3351,151 +3266,8 @@
       "jar": "http://118.89.172.248:8025/jar/tan.php"
     },
     {
-      "key": "tv_back-026_AppRJ",
-      "name": "🍂┃热播┃高清·1号VIP源",
-      "type": 3,
-      "api": "csp_AppRJ",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1,
-      "ext": {
-        "url": "http://v.rbotv.cn",
-        "block": [
-          "线路二(点击切换)",
-          "CO4K"
-        ]
-      },
-      "jar": "http://118.89.172.248:8025/jar/tan.php"
-    },
-    {
-      "key": "tv_back-017_卡卡",
-      "name": "卡卡 • 4K·潇洒",
-      "type": 3,
-      "api": "csp_KKPan",
-      "searchable": 1,
-      "quickSearch": 0,
-      "filterable": 0,
-      "style": {
-        "type": "list"
-      },
-      "timeout": 60,
-      "jar": "https://qist.wyfc.qzz.io/xiaosa/spider.jar"
-    },
-    {
-      "key": "tv_back-026_csp_Wogg",
-      "name": "💖┃玩偶┃4K💖·1号VIP源",
-      "type": 3,
-      "api": "csp_WoggSite",
-      "quickSearch": 1,
-      "filterable": 1,
-      "timeout": 15,
-      "changeable": 0,
-      "ext": "ewogICJzaXRlX3VybHMiOiBbCiAgICAiaHR0cHM6Ly93d3cud29nZy5saXZlIiwKICAgICJodHRwczovL3dvZ2dwYW4uMzMzMjMyLnh5ei8iLAogICAgImh0dHBzOi8vd3d3LndvZ2cubmV0IgogIF0sCiAgInRva2VuIjogIiIsCiAgInVjQ29va2llIjogIiIsCiAgInF1YXJrQ29va2llIjogIiIKfQ==",
-      "jar": "http://118.89.172.248:8025/jar/tan.php"
-    },
-    {
-      "key": "tv_back-023_暴风采集",
-      "name": "🌪️暴风影音·ok线路1",
-      "type": 1,
-      "api": "https://app.bfzyapi.com/api.php/provide/vod/",
-      "playUrl": "",
-      "categories": [
-        "国产剧",
-        "国产动漫",
-        "动作片",
-        "科幻片",
-        "剧情片",
-        "喜剧片",
-        "爱情片",
-        "恐怖片",
-        "战争片",
-        "香港剧",
-        "台湾剧",
-        "日本剧",
-        "欧美剧",
-        "泰国剧",
-        "日本动漫",
-        "综艺频道",
-        "大陆综艺",
-        "港台综艺",
-        "日本综艺",
-        "新马泰综艺",
-        "纪录片"
-      ]
-    },
-    {
-      "key": "tv_back-026_AppDramaPingguo",
-      "name": "🍂┃苹果┃1080P·1号VIP源",
-      "type": 3,
-      "api": "csp_AppDrama",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1,
-      "ext": {
-        "appName": "小苹果",
-        "commonKey": "ed5fdsgucxumegqa",
-        "publicKey": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCduNEnfxGaLuQRk5ABzXHhPV43zi00sCHjLo8BYc+Wi6xXm2b4v0i28Sq4WlNCKhseft9fz8kO/qLr6/022o1RcuOU7e4GFL3U9WnNODwRBYSYWd+K8nqpI/tAUDmZEBGRWqjrc7x6aMl3A+xpnWkLbPCLsuhbuuUE3tv09oeOpwIDAQAB",
-        "dataKey": "S0VNDTJHOFHHCNMRAW5IV2TOS2PBPQ==",
-        "dataIv": "OC1A06E197EF10CF3F6058CA7A803B5E",
-        "pkg": "com.juechufsh.android.xpg1",
-        "host": "",
-        "site": "https://xpgandroid03-1372779881.cos.ap-beijing.myqcloud.com/app_xpg_android.txt",
-        "version": "1.0.0.3",
-        "decrypt": "1",
-        "danmu": true,
-        "danmu_api": "https://dm.211.li/nonay"
-      },
-      "jar": "http://118.89.172.248:8025/jar/tan.php"
-    },
-    {
-      "key": "tv_back-026_YunDuo",
-      "name": "🍂┃大鹅┃1080P·1号VIP源",
-      "type": 3,
-      "api": "csp_YunDuo",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1,
-      "ext": {
-        "host": "https://323433ssdfd.top",
-        "block": [
-          "PO蓝光",
-          "CO4K",
-          "ZJ4k",
-          "NB蓝光"
-        ]
-      },
-      "jar": "http://118.89.172.248:8025/jar/tan.php"
-    },
-    {
-      "key": "360资源",
-      "name": "[343KB/s|2129ms|中] 360资源",
-      "type": 1,
-      "api": "https://360zy.com/api.php/provide/vod/?ac=list",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 0
-    },
-    {
-      "key": "360",
-      "name": "[338KB/s|2280ms|中] 360",
-      "type": 1,
-      "api": "https://360zy.com/api.php/provide/vod",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 0
-    },
-    {
-      "key": "360┃直连",
-      "name": "[336KB/s|2189ms|中] 360┃直连",
-      "type": 1,
-      "api": "https://360zy.com/api.php/provide/vod/",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 0
-    },
-    {
       "key": "🦚360┃采集",
-      "name": "[328KB/s|1766ms|中] 🦚360┃采集",
+      "name": "[338KB/s|2563ms|中] 🦚360┃采集",
       "type": 1,
       "api": "https://360zy.com/api.php/provide/vod?",
       "searchable": 1,
@@ -3503,44 +3275,44 @@
       "filterable": 0
     },
     {
-      "key": "虎牙资源",
-      "name": "[4368KB/s|351ms|稳] 虎牙资源",
+      "key": "360资源",
+      "name": "[331KB/s|1785ms|中] 360资源",
       "type": 1,
-      "api": "https://www.huyaapi.com/api.php/provide/vod/?ac=list",
+      "api": "https://360zy.com/api.php/provide/vod/?ac=list",
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 0
     },
     {
-      "key": "烂大街",
-      "name": "[3917KB/s|331ms|稳] 烂大街",
+      "key": "360┃资源",
+      "name": "[211KB/s|1940ms|中] 360┃资源",
       "type": 1,
-      "api": "https://www.huyaapi.com/api.php/provide/vod/",
+      "api": "https://360zy.com/api.php/provide/vod/",
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 0
     },
     {
-      "key": "🌼虎牙┃采集🌼",
-      "name": "[3874KB/s|319ms|稳] 🌼虎牙┃采集🌼",
-      "type": 1,
-      "api": "https://www.huyaapi.com/api.php/provide/vod/from/hym3u8",
+      "key": "白嫖资源(已修复)",
+      "name": "[2506KB/s|538ms|稳] 白嫖资源(已修复)",
+      "type": 0,
+      "api": "https://www.kxgav.com/api/xml.php",
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 0
     },
     {
-      "key": "光速资源2",
-      "name": "[2566KB/s|307ms|稳] 光速资源2",
+      "key": "第一┃资源",
+      "name": "[2398KB/s|630ms|稳] 第一┃资源",
       "type": 1,
-      "api": "https://api.guangsuapi.com/api.php/provide/vod/",
+      "api": "https://caiji.diyizy.net/api.php/provide/vod/",
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 0
     },
     {
       "key": "奶香 | 采集",
-      "name": "[2534KB/s|682ms|稳] 奶香 | 采集",
+      "name": "[1998KB/s|966ms|稳] 奶香 | 采集",
       "type": 1,
       "api": "https://naixxzy.com/api.php/provide/vod/",
       "searchable": 1,
@@ -3549,7 +3321,7 @@
     },
     {
       "key": "鸡坤 | 采集",
-      "name": "[2435KB/s|711ms|稳] 鸡坤 | 采集",
+      "name": "[1751KB/s|1023ms|稳] 鸡坤 | 采集",
       "type": 1,
       "api": "https://jkunzyapi.com/api.php/provide/vod/",
       "searchable": 1,
@@ -3557,8 +3329,26 @@
       "filterable": 0
     },
     {
+      "key": "大奶子 | 采集",
+      "name": "[1607KB/s|787ms|稳] 大奶子 | 采集",
+      "type": 1,
+      "api": "https://apidanaizi.com/api.php/provide/vod",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0
+    },
+    {
+      "key": "155 | 采集",
+      "name": "[1235KB/s|1044ms|稳] 155 | 采集",
+      "type": 1,
+      "api": "https://155api.com/api.php/provide/vod/",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0
+    },
+    {
       "key": "Doubanaaaa",
-      "name": "🐮【更新日期:20261126】🐮",
+      "name": "🐮【更新日期:20261127】🐮",
       "type": 3,
       "api": "csp_NewDouBanGuard",
       "indexs": 1,
