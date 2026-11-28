@@ -17,6 +17,8 @@ jobs:
           python-version: '3.11'
       - name: 合并上游源
         run: python scripts/merge.py
+      - name: 校验生成结果
+        run: python scripts/check.py
       - name: 提交变更
         run: |
           git config user.name "github-actions[bot]"
