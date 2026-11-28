@@ -3,5 +3,6 @@ __pycache__/
 *.log
 .DS_Store
 token/
-*. bak
+*.bak
 temp*
+data/winbox_pan_config.json
